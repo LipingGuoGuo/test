@@ -5,7 +5,7 @@
  	//判断return 返回为空的情况
     	if (sz <= 0) or (string == "") or (len(string) < sz):
         	return ""
- 	//建立新的数组（list）,对输入的数字进行模块的划分及插入进新的数组中
+ 	//建立新的数组（list）,对输入的   数字进行模块的划分及插入进新的数组中
     	chunk = []
     	chunkNew = []
     	while len(string) >= sz:
