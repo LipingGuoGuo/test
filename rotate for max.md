@@ -16,7 +16,7 @@
             //判断每次循环得到的数与定义的最大数进行比较，数组转换为字符串，类型强制为整数
             temp = int("".join(arr))
             if temp > max:
-                max = temp
+                max = temp  
         return max
 ```
         
