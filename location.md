@@ -3,7 +3,7 @@
 ```
 from selenium import webdriver
 import time
-from selenium.webdriver.common.by import By  ##不明白具体
+from selenium.webdriver.common.by import By  ##引用By类
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
@@ -25,7 +25,7 @@ driver.find_element_by_class_name("s_btn").click()
 > * 通过标签名去定位 `find_element_by_tag_name()`一般一种标签在一个页面不止一次甚至大量出现，定位方式作用不大
 > * 通过link_text()或者partial_link_text()定位超链接，即html页面中的<a>标签 `find_element_by_link_text("新闻").click()` `find_element_by_partial_link_text("闻").click()`
 ##### By定位
-```
+```使用前提为导入By类：from selenium.webdriver.common.by import By
 find_element(By.ID,"kw")
 find_element(By.NAME,"wd")
 find_element(By.CLASS_NAME,"s_ipt"）
